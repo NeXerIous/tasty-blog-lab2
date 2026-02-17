@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBlog - Лучшие рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+
+    <header class="main">
+        
+        <div class="container header__content">
+            <a href="#" class="logo">TastyBlog</a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Главная</a></li>
+                    <li class="nav-item"><a href="#">Рецепты</a></li>
+                    <li class="nav-item"><a href="#">О нас</a></li>
+                    <li class="nav-item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+        
+        <article class="recipe" itemscope itemtype="https://schema.org/Recipe">
+            <header class="recipe-header">
+                <h1 class="recipe-title" itemprop="name">Домашняя пицца "Маргарита"</h1>
+
+                <div class="recipe-meta">
+                    <span>Опубликовано: <time datetime="2026-03-05" itemprop="datePublished">5 марта 2006</time></span>
+                    <span>Автор: <span itemprop="author">Шеф Иван</span></span>
+                </div>
+            </header>
+            
+                <figure class="recipe-image">
+                    <img src="images/pizza.jpg" alt="Аппетитная пицца Маргарита с базиликом" itemprop="title">
+                    <figcaption>Классическая подача пиццы</figcaption>
+                </figure>
+
+                <section class="recipe-description" itemprop="description">
+                    <p>Простой и вкусный рецепт Итальянской классики, который лекго повторить дома.</p>
+                </section>
+
+                <section class="recipe-ingridients">
+                    <h2>Ингридиенты</h2>
+                    <ul>
+                        <li itemprop="recipeIngridient">Мука - 500 г</li>
+                        <li itemprop="recipeIngridient">Вода - 300 мл</li>
+                        <li itemprop="recipeIngridient">Моцарелла - 200 г</li>
+                        <li itemprop="recipeIngridient">Томатный соус - 100 г</li>
+                        <li itemprop="recipeIngridient">Базилик свежий</li>
+                    </ul>
+                </section>
+
+                <section class="recipe-instructions">
+                    <h2>Приготовление</h2>
+                    <ol>
+                        <li itemprop="recipeInstructions">
+                            <p>Замесите тесто из муки и воды, дайте ему отдохнуть 30 минут.</p>
+                        </li>
+                        <li itemprop="recipeInstructions">
+                            <p>Раскатайте основу и смажьте её томатным соусом.</p>
+                        </li>
+                        <li itemprop="recipeInstructions">
+                            <p>Выложите нарезанную моцареллу и запекайте 15 минут при 220 градусах.</p>
+                        </li>
+                        <li itemprop="recipeInstructions">
+                            <p>Украсьте свежим базиликом перед подачей.</p>
+                        </li>
+                    </ol>
+                </section>
+
+        </article>
+
+    </main>
+
+    <aside class="sidebar">
+        БОКОВАЯ ПАНЕЛЬ
+    </aside>
+
+    <footer class="footer">
+        Подвал
+    </footer>
+
+    </body>
+</html>
