@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
+<a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
 
     <header class="main">
         
@@ -25,66 +26,87 @@
 
     </header>
 
-    <main class="main">
-        
+    <main class="main" id="main-content">
         <article class="recipe" itemscope itemtype="https://schema.org/Recipe">
+            
             <header class="recipe-header">
                 <h1 class="recipe-title" itemprop="name">Домашняя пицца "Маргарита"</h1>
-
+                
                 <div class="recipe-meta">
-                    <span>Опубликовано: <time datetime="2026-03-05" itemprop="datePublished">5 марта 2006</time></span>
-                    <span>Автор: <span itemprop="author">Шеф Иван</span></span>
+                    <span>Опубликовано: <time datetime="2026-03-05" itemprop="datePublished">5 марта 2026</time></span>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        Автор: <span itemprop="name">Шеф Иван</span>
+                    </span>
                 </div>
             </header>
-            
-                <figure class="recipe-image">
-                    <img src="images/pizza.jpg" alt="Аппетитная пицца Маргарита с базиликом" itemprop="title">
-                    <figcaption>Классическая подача пиццы</figcaption>
-                </figure>
-
-                <section class="recipe-description" itemprop="description">
-                    <p>Простой и вкусный рецепт Итальянской классики, который лекго повторить дома.</p>
-                </section>
-
-                <section class="recipe-ingridients">
-                    <h2>Ингридиенты</h2>
-                    <ul>
-                        <li itemprop="recipeIngridient">Мука - 500 г</li>
-                        <li itemprop="recipeIngridient">Вода - 300 мл</li>
-                        <li itemprop="recipeIngridient">Моцарелла - 200 г</li>
-                        <li itemprop="recipeIngridient">Томатный соус - 100 г</li>
-                        <li itemprop="recipeIngridient">Базилик свежий</li>
-                    </ul>
-                </section>
-
-                <section class="recipe-instructions">
-                    <h2>Приготовление</h2>
-                    <ol>
-                        <li itemprop="recipeInstructions">
-                            <p>Замесите тесто из муки и воды, дайте ему отдохнуть 30 минут.</p>
-                        </li>
-                        <li itemprop="recipeInstructions">
-                            <p>Раскатайте основу и смажьте её томатным соусом.</p>
-                        </li>
-                        <li itemprop="recipeInstructions">
-                            <p>Выложите нарезанную моцареллу и запекайте 15 минут при 220 градусах.</p>
-                        </li>
-                        <li itemprop="recipeInstructions">
-                            <p>Украсьте свежим базиликом перед подачей.</p>
-                        </li>
-                    </ol>
-                </section>
-
+    
+            <figure class="recipe-image">
+                <img src="images/pizza.jpg" alt="Аппетитная пицца Маргарита" itemprop="image">
+                <figcaption>Классическая подача пиццы</figcaption>
+            </figure>
+    
+            <div class="recipe-description" itemprop="description">
+                <p>Простой и вкусный рецепт итальянской классики, который легко повторить дома.</p>
+            </div>
+    
+            <section class="recipe-ingredients">
+                <h2>Ингредиенты</h2>
+                <ul>
+                    <li itemprop="recipeIngredient">Мука - 500 г</li>
+                    <li itemprop="recipeIngredient">Вода - 300 мл</li>
+                    <li itemprop="recipeIngredient">Моцарелла - 200 г</li>
+                    <li itemprop="recipeIngredient">Томатный соус - 100 г</li>
+                    <li itemprop="recipeIngredient">Базилик свежий</li>
+                </ul>
+            </section>
+    
+            <section class="recipe-instructions">
+                <h2>Приготовление</h2>
+                <ol>
+                    <li itemprop="recipeInstructions">
+                        <div itemprop="text">Замесите тесто из муки и воды, дайте ему отдохнуть 30 минут.</div>
+                    </li>
+                    <li itemprop="recipeInstructions">
+                        <div itemprop="text">Раскатайте основу и смажьте её томатным соусом.</div>
+                    </li>
+                    <li itemprop="recipeInstructions">
+                        <div itemprop="text">Выложите нарезанную моцареллу и запекайте 15 минут при 220 градусах.</div>
+                    </li>
+                    <li itemprop="recipeInstructions">
+                        <div itemprop="text">Украсьте свежим базиликом перед подачей.</div>
+                    </li>
+                </ol>
+            </section>
         </article>
-
     </main>
 
     <aside class="sidebar">
-        БОКОВАЯ ПАНЕЛЬ
+        <div class="sidebar-widget">
+            <h3>Категории рецептов</h3>
+            <ul>
+                <li><a href="#">Завтраки</a></li>
+                <li><a href="#">Супы</a></li>
+                <li><a href="#">Горячее</a></li>
+                <li><a href="#">Десерты</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-widget">
+            <h3>Популярное</h3>
+            <ul>
+                <li><a href="#">Паста Карбонара</a></li>
+                <li><a href="#">Борщ</a></li>
+            </ul>
+        </div>
     </aside>
 
-    <footer class="footer">
-        Подвал
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container footer-content">
+            <p>&copy; 2026 TastyBlog. Все права защищены.</p>
+            <address class="footer-contacts">
+                <p>Email: <a href="mailto:info@tastyblog.ru">info@tastyblog.ru</a></p>
+            </address>
+        </div>
     </footer>
 
     </body>
