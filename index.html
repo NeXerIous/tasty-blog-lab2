@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,29 @@
 <body itemscope itemtype="https://schema.org/WebPage">
 <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
 
-    <header class="main">
-        
+    <header class="header">
+
         <div class="container header__content">
-            <a href="#" class="logo">TastyBlog</a>
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Cooks Delight Logo" class="logo__icon">
+                <span class="logo__text">Cooks Delight</span>
+            </a>
 
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Главная</a></li>
-                    <li class="nav-item"><a href="#">Рецепты</a></li>
-                    <li class="nav-item"><a href="#">О нас</a></li>
-                    <li class="nav-item"><a href="#">Контакты</a></li>
+                    <li class="nav-item"><a href="#">HOME</a></li>
+                    <li class="nav-item"><a href="#">RECIPES</a></li>
+                    <li class="nav-item"><a href="#">COOKING TIPS</a></li>
+                    <li class="nav-item"><a href="#">ABOUT US</a></li>
                 </ul>
             </nav>
+            
+            <div class="header__actions">
+                <button class="search-btn" aria-label="Поиск">
+                    <img src="images/Search-Icon.svg" alt="Иконка поиска">
+                </button>
+                <a href="#subscribe" class="btn btn--subscribe">SUBSCRIBE</a>
+            </div>
         </div>
 
     </header>
@@ -30,82 +40,271 @@
         <article class="recipe" itemscope itemtype="https://schema.org/Recipe">
             
             <header class="recipe-header">
-                <h1 class="recipe-title" itemprop="name">Домашняя пицца "Маргарита"</h1>
-                
-                <div class="recipe-meta">
-                    <span>Опубликовано: <time datetime="2026-03-05" itemprop="datePublished">5 марта 2026</time></span>
-                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                        Автор: <span itemprop="name">Шеф Иван</span>
-                    </span>
-                </div>
-            </header>
-    
-            <figure class="recipe-image">
-                <img src="images/pizza.jpg" alt="Аппетитная пицца Маргарита" itemprop="image">
-                <figcaption>Классическая подача пиццы</figcaption>
-            </figure>
-    
-            <div class="recipe-description" itemprop="description">
-                <p>Простой и вкусный рецепт итальянской классики, который легко повторить дома.</p>
-            </div>
-    
-            <section class="recipe-ingredients">
-                <h2>Ингредиенты</h2>
-                <ul>
-                    <li itemprop="recipeIngredient">Мука - 500 г</li>
-                    <li itemprop="recipeIngredient">Вода - 300 мл</li>
-                    <li itemprop="recipeIngredient">Моцарелла - 200 г</li>
-                    <li itemprop="recipeIngredient">Томатный соус - 100 г</li>
-                    <li itemprop="recipeIngredient">Базилик свежий</li>
+                <span class="recipe-badge">RECIPE</span>
+               
+                <h1 class="recipe-title" itemprop="name">LEMON GARLIC ROASTED CHICKEN</h1>
+               
+                <p class="recipe-description" itemprop="description">Welcome to Cooks Delight, where culinary dreams come alive! Today, we embark on a journey of flavors with a dish that promises to elevate your dining experience – our Citrus Infusion Delight: Lemon Garlic Roasted Chicken.</p>
+              
+                <ul class="recipe-info">
+                    <li class="recipe-info-item">
+                        <img src="images/clock-icon.svg" alt="" class="item-icon">
+                        <span>1 HOUR</span>
+                    </li>
+                    <li class="recipe-info-item">
+                        <img src="images/difficulty-hard-icon.svg" alt="" class="item-icon">
+                        <span>HARD PREP</span>
+                    </li>
+                    <li class="recipe-info-item">
+                        <img src="images/dish-icon.svg" alt="" class="item-icon">
+                        <span itemprop="recipeYield">4 SERVES</span>
+                    </li>
                 </ul>
-            </section>
+                
+                <figure class="recipe-main-image">
+                    <img src="images/main-chicken.jpg" alt="Lemon Garlic Roasted Chicken in a pan" itemprop="image">
+                </figure>
+            </header>
+            
+            <div class="recipe-content">
     
-            <section class="recipe-instructions">
-                <h2>Приготовление</h2>
-                <ol>
-                    <li itemprop="recipeInstructions">
-                        <div itemprop="text">Замесите тесто из муки и воды, дайте ему отдохнуть 30 минут.</div>
-                    </li>
-                    <li itemprop="recipeInstructions">
-                        <div itemprop="text">Раскатайте основу и смажьте её томатным соусом.</div>
-                    </li>
-                    <li itemprop="recipeInstructions">
-                        <div itemprop="text">Выложите нарезанную моцареллу и запекайте 15 минут при 220 градусах.</div>
-                    </li>
-                    <li itemprop="recipeInstructions">
-                        <div itemprop="text">Украсьте свежим базиликом перед подачей.</div>
-                    </li>
-                </ol>
-            </section>
+                <div class="recipe-body">
+
+                    <p>Picture succulent chicken infused with the bright notes of lemon and the aromatic richness of garlic. It's a symphony of flavors that will have your taste buds dancing. Join us as we delve into the art of roasting and uncover the secrets behind creating a masterpiece that's not just a meal but a celebration of culinary craftsmanship.</p>
+                    <p>As you preheat your oven, envision the kitchen filling with the tantalizing aroma of herbs and citrus, setting the stage for a delightful meal that transcends the ordinary. The anticipation builds as the chicken roasts to golden perfection, promising a dining experience that marries simplicity with sophistication. Whether you're a seasoned chef or a kitchen novice, this recipe invites you to become a culinary artist, creating a masterpiece that will leave a lasting impression on your guests and loved ones.</p>
+
+                    <section class="recipe-tips">
+                        <h2 class="tips-main-title">Let's go over the basics– the do's, and the don'ts– for How to Cook a chicken</h2>
+                        
+                        <h3 class="tips-subtitle tips-subtitle--do">DO'S:</h3>
+                        <ul class="tips-list dos-list">
+                            <li><strong>Thoroughly Clean Hands and Surfaces:</strong> Before and after handling raw chicken, ensure your hands, utensils, and surfaces are clean to prevent cross-contamination.</li>
+                            <li><strong>Use Separate Cutting Boards:</strong> Dedicate specific cutting boards for raw chicken to avoid the spread of bacteria to other foods.</li>
+                            <li><strong>Check Internal Temperature:</strong> Invest in a reliable meat thermometer to ensure the chicken reaches the safe internal temperature of 165°F (74°C).</li>
+                        </ul>
+
+                        <h3 class="tips-subtitle tips-subtitle--dont">DON'TS:</h3>
+                        <ul class="tips-list donts-list">
+                            <li><strong>Thaw Chicken at Room Temperature:</strong> Avoid thawing chicken on the counter. Instead, thaw it in the refrigerator to prevent bacterial growth.</li>
+                            <li><strong>Overcrowd the Pan:</strong> When roasting, ensure the chicken pieces have space between them for even cooking. Overcrowding can lead to unevenly cooked chicken.</li>
+                        </ul>
+                    </section>
+
+                    <section class="recipe-instructions">
+                        <h2 class="instructions-title">Instructions</h2>
+                        <p>This recipe goes beyond the basics, inviting you to savor the richness of a creamy tomato basil sauce that clings to each strand of perfectly cooked pasta. It's a celebration of simplicity, where every ingredient plays a crucial role in creating a dish that is as comforting as it is delightful.</p>
+                        <p>Allow the chicken to rest for 10 minutes before carving. This brief resting period is essential; it allows the juices to redistribute, ensuring each slice is succulent and bursting with flavor. As you carve into the golden exterior, be prepared for the enticing aroma that fills the air, signaling that your Citrus Infusion Delight is ready to be savored.</p>
+                        
+                        <div class="instructions-step">
+                            
+                            <h3 class="step-title">Preheat and Prepare</h3>
+                            
+                            <ul>
+                                <li itemprop="recipeInstructions">Preheat your oven to 375°F (190°C).</li>
+                                <li itemprop="recipeInstructions">Rinse the chicken inside and out, then pat it dry with paper towels.</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="instructions-step">
+
+                            <h3 class="step-title">Citrus Infusion</h3>
+
+                            <ul>
+                                <li itemprop="recipeInstructions">Carefully lift the skin of the chicken and rub minced garlic directly onto the meat.</li>
+                                <li itemprop="recipeInstructions">Place lemon slices under the skin, ensuring they cover as much surface as possible.</li>
+                            </ul>
+
+                            <img src="images/step-two-chicken.jpg" alt="Citrus Infused Chicken">
+                        </div>
+
+                        <div class="instructions-step">
+
+                            <h3 class="step-title">Herb Blend</h3>
+
+                            <ul>
+                                <li itemprop="recipeInstructions">In a small bowl, mix olive oil, dried thyme, dried rosemary, salt, and black pepper to create a herb-infused mixture.</li>
+                                <li itemprop="recipeInstructions">Brush the entire chicken with the herb-infused mixture, making sure it's evenly coated.</li>
+                                <li itemprop="recipeInstructions">Season the exterior with additional salt and black pepper to taste.</li>
+                            </ul>
+
+                            <img src="images/step-three-chicken.jpg" alt="Blending Chicken">
+                        </div>
+
+                        <div class="instructions-step">
+
+                            <h3 class="step-title">Roast to Perfection</h3>
+
+                            <ul>
+                                <li itemprop="recipeInstructions">Place the chicken in a roasting pan, breast side up.</li>
+                                <li itemprop="recipeInstructions">Roast in the preheated oven for approximately 1 hour or until the internal temperature reaches 165°F (74°C).</li>
+                                <li itemprop="recipeInstructions">Allow the chicken to rest for 10 minutes before carving.</li>
+                                <li itemprop="recipeInstructions">Serve with the pan juices and roasted lemon slices for an extra burst of flavor.</li>
+                            </ul>
+
+                            <img src="images/step-four-chicken.jpg" alt="Blending Chicken">
+                        </div>
+
+                        <div class="instructions-step">
+                            <h3 class="step-title">Pairing Suggestions</h3>
+                            <ol>
+                                <li>Side Dish: Serve alongside roasted vegetables or a simple green salad.</li>
+                                <li>Wine: Pair with a crisp white wine or a light rosé for a well-balanced meal.</li>
+                            </ol>
+                            <p><strong>Roasted Vegetables: </strong>The vibrant flavors of the roasted chicken complement beautifully with seasonal vegetables.</p>
+                            <p><strong>Herb-infused Quinoa: </strong>Create a wholesome meal by serving it alongside a bed of herb-infused quinoa.</p>
+                            <p>The combination of fresh lemon and aromatic garlic creates a citrus-infused masterpiece that takes the classic roast chicken to a whole new level. The acidity of the lemons not only adds brightness but also helps to tenderize the meat, resulting in a juicy and flavorful dish.
+Whether you're hosting a family dinner or looking for a show-stopping centerpiece for a special celebration, this Lemon Garlic Roasted Chicken is the answer. The simplicity of the ingredients allows the natural flavors to shine, making it a versatile and impressive dish.</p>
+                        </div>
+
+                    </section>
+
+                    <div class="share-block">
+                        <span class="share-label">SHARE</span>
+                            <ul class="share-socials">
+                                <li><a href="#"><img src="images/icon-fb.svg" alt="Facebook"></a></li>
+                                <li><a href="#"><img src="images/icon-ig.svg" alt="Instagram"></a></li>
+                                <li><a href="#"><img src="images/icon-yt.svg" alt="YouTube"></a></li>
+                            </ul>
+                    </div>
+
+                    <div class="recipe-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/author-isabella.jpg" alt="Isabella Russo" class="author-photo">
+                        <div class="author-info">
+                            <h3 class="author-name" itemprop="name">Isabella Russo</h3>
+                            <p class="author-bio">In the world of pots and pans, I'm on a mission to turn every meal into a masterpiece. Cooks Delight is not just a blog; it's a shared space where the love for food transcends boundaries. Here, we celebrate the art of crafting meals that not only nourish the body but also feed the soul.</p>
+                            <a href="#" class="btn btn--outline">LEARN MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <aside class="recipe-sidebar">
+                    <section class="ingredients-box">
+                        <h2 class="ingridients-title">Ingridients</h2>
+                        <ul class="ingridients-list">
+                            <li itemprop="recipeIngredient">1 whole chicken (about 3-4 pounds)</li>
+                            <li itemprop="recipeIngredient">2 lemons, sliced</li>
+                            <li itemprop="recipeIngredient">6 cloves garlic, minced</li>
+                            <li itemprop="recipeIngredient">2 tablespoons olive oil</li>
+                            <li itemprop="recipeIngredient">1 teaspoon dried thyme</li>
+                            <li itemprop="recipeIngredient">1 teaspoon dried rosemary</li>
+                            <li itemprop="recipeIngredient">Salt and black pepper to taste</li>
+                        </ul>
+                    </section>
+
+                    <section class="equipment-box">
+                        <h2 class="equipment-title">Equipment Needed for Preparation</h2>
+                        <ul class="equipment-list">
+                            <li>Meat thermometer</li>
+                            <li>Roasting pan</li>
+                            <li>Cutting board</li>
+                            <li>Kitchen twine</li>
+                        </ul>
+                    </section>
+
+                    <section class="value-box" itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                        <h2 class="value-title">Nutritional Value</h2>
+                        <span class="value-amount">Per serving (based on a 4-pound chicken):</span>
+                        <ul class="value-list">
+                            <li>Calories: <span itemprop="calories">~250</span></li>
+                            <li>Protein: <span itemprop="proteinContent">~30g</span></li>
+                            <li>Total Fat: <span itemprop="fatContent">~13g</span></li>
+                            <li>Carbohydrates: <span itemprop="carbohydrateContent">~5g</span></li>
+                        </ul>
+                    </section>
+
+                    <p class="recipe-sidebar-note">Note: Nutritional values are approximate and may vary based on specific ingredients and portion sizes.</p>
+                    </aside>
+
+            </div>
         </article>
+        <section class="similar-recipes">
+            <div class="container">
+                
+                <header class="section-header">
+                    <h2 class="section-title">SIMILAR RECIPES</h2>
+                    <div class="slider-controls">
+                        <button class="btn-slider btn-slider--prev" aria-label="Предыдущие рецепты">
+                            <img src="images/arrow-left.svg" alt="">
+                        </button>
+                        <button class="btn-slider btn-slider--next" aria-label="Следующие рецепты">
+                            <img src="images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="recipes-grid">
+                    
+                    <article class="recipe-card">
+                        <img src="images/similar-chicken.jpg" alt="Savory Herb-Infused Chicken" class="recipe-card__image">
+                        <div class="recipe-card__content">
+                            <h3 class="recipe-card__title">Savory Herb-Infused Chicken</h3>
+                            <p class="recipe-card__desc">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.</p>
+                            <div class="recipe-card__meta">
+                                <span class="meta-info">40 MIN - EASY PREP - 3 SERVES</span>
+                                <a href="#" class="btn btn--outline">VIEW RECIPE</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card">
+                        <div class="image-wrapper">
+                            <img src="images/similar-mousse.jpg" alt="Decadent Chocolate Mousse" class="recipe-card__image">
+                            <img src="images/vegan-badge.svg" alt="Vegan friendly" class="badge-vegan">
+                        </div>
+                        <div class="recipe-card__content">
+                            <h3 class="recipe-card__title">Decadent Chocolate Mousse</h3>
+                            <p class="recipe-card__desc">Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
+                            <div class="recipe-card__meta">
+                                <span class="meta-info">30 MIN - MEDIUM PREP - 4 SERVES</span>
+                                <a href="#" class="btn btn--outline">VIEW RECIPE</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <aside class="sidebar">
-        <div class="sidebar-widget">
-            <h3>Категории рецептов</h3>
-            <ul>
-                <li><a href="#">Завтраки</a></li>
-                <li><a href="#">Супы</a></li>
-                <li><a href="#">Горячее</a></li>
-                <li><a href="#">Десерты</a></li>
+    <section class="subscribe-section">
+        <div class="container subscribe-content">
+            <span class="subscribe-label">SUBSCRIBE</span>
+            <h2 class="subscribe-title">JOIN THE FUN<br>SUBSCRIBE NOW!</h2>
+            <p class="subscribe-desc">Subscribe to our newsletter for a weekly serving of recipes, cooking tips, and exclusive insights straight to your inbox.</p>
+            
+            <form action="#" class="subscribe-form">
+                <input type="email" placeholder="Email Address" class="subscribe-input" required aria-label="Email Address">
+                <button type="submit" class="btn btn--submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container footer-top">
+            <a href="#" class="footer-logo">
+                <img src="images/logo-white.svg" alt="Cooks Delight Logo">
+            </a>
+            
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">RECIPES</a></li>
+                    <li><a href="#">COOKING TIPS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+            
+            <ul class="footer-socials">
+                <li><a href="#"><img src="images/icon-tiktok-white.svg" alt="TikTok"></a></li>
+                <li><a href="#"><img src="images/icon-fb-white.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/icon-ig-white.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/icon-yt-white.svg" alt="YouTube"></a></li>
             </ul>
         </div>
         
-        <div class="sidebar-widget">
-            <h3>Популярное</h3>
-            <ul>
-                <li><a href="#">Паста Карбонара</a></li>
-                <li><a href="#">Борщ</a></li>
-            </ul>
-        </div>
-    </aside>
-
-    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
-        <div class="container footer-content">
-            <p>&copy; 2026 TastyBlog. Все права защищены.</p>
-            <address class="footer-contacts">
-                <p>Email: <a href="mailto:info@tastyblog.ru">info@tastyblog.ru</a></p>
-            </address>
+        <div class="container footer-bottom">
+            <p class="copyright">COPYRIGHT &copy; 2024 COOKS DELIGHT.</p>
         </div>
     </footer>
 
