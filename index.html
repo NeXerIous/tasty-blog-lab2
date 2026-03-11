@@ -20,13 +20,14 @@
                 <span class="logo__text">Cooks Delight</span>
             </a>
 
-            <button class="burger-btn" aria-label="Открыть меню">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">
+            <label for="nav-toggle" class="burger-btn" aria-controls="site-navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
 
-            <nav class="main-nav">
+            <nav class="main-nav" id="site-navigation">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">HOME</a></li>
                     <li class="nav-item"><a href="#">RECIPES</a></li>

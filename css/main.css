@@ -1,6 +1,6 @@
-/* ========================================= */
-/* БАЗОВЫЕ НАСТРОЙКИ И ШАПКА РЕЦЕПТА         */
-/* ========================================= */
+
+
+
 
 .container {
     max-width: 1200px;
@@ -32,7 +32,7 @@
     font-size: 14px;
     font-weight: 700;
     display: inline-block;
-    margin-bottom: 24px;
+    margin-bottom: 6px;
     letter-spacing: 1px;
 }
 
@@ -40,10 +40,10 @@
     font-size: 56px;
     line-height: 1.1;
     font-weight: 900;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
     text-transform: uppercase;
     color: var(--color-dark, #262522);
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .recipe-description {
@@ -100,9 +100,9 @@
     display: block;
 }
 
-/* ========================================= */
-/* CSS GRID: РАЗДЕЛЕНИЕ НА КОЛОНКИ           */
-/* ========================================= */
+
+
+
 
 .recipe-content {
     display: grid;
@@ -122,9 +122,9 @@
     }
 }
 
-/* ========================================= */
-/* ЛЕВАЯ КОЛОНКА: ОСНОВНОЙ ТЕКСТ             */
-/* ========================================= */
+
+
+
 
 .recipe-body {
     grid-area: content;
@@ -141,7 +141,7 @@
 }
 
 .recipe-body p strong {
-    color: var(--color-accent, #ee6352); /* Тот самый красновато-оранжевый */
+    color: var(--color-accent, #ee6352); 
 }
 
 .recipe-body p {
@@ -160,62 +160,62 @@
 }
 
 
-/* ========================================= */
-/* ЛЕВАЯ КОЛОНКА: DO'S И DON'TS (ИДЕАЛ)      */
-/* ========================================= */
 
-/* Главный заголовок (Let's go over...) */
+
+
+
+
 .tips-main-title {
     font-family: var(--font-family-headings, 'Montserrat', sans-serif);
     font-size: 24px;
     font-weight: 700;
     color: #262522;
-    margin: 40px 0 16px 0; /* Ровно 16px снизу до DO'S */
+    margin: 40px 0 16px 0; 
     line-height: 1.3;
 }
 
-/* Подзаголовки (DO'S: и DON'TS:) */
+
 .tips-subtitle {
     font-family: var(--font-family-headings, 'Montserrat', sans-serif);
     font-size: 18px;
     font-weight: 600;
     color: #ee6352;
-    margin: 0 0 16px 0; /* Ровно 16px снизу до первого пункта */
+    margin: 0 0 16px 0; 
     text-transform: uppercase;
 }
 
-/* Сам список */
+
 .recipe-body ul.tips-list {
-    list-style: none; /* Убиваем кружочки */
-    padding-left: 0;  /* Прижимаем к левому краю */
-    margin: 0 0 16px 0; /* Отступ до следующего подзаголовка DON'TS */
+    list-style: none; 
+    padding-left: 0;  
+    margin: 0 0 16px 0; 
 }
 
-/* Пункты списка (единые блоки текста) */
+
 .recipe-body ul.tips-list li {
     font-family: var(--font-family-text, 'Roboto', sans-serif);
     font-size: 16px;
-    font-weight: 300; /* В макете здесь нормальный вес, а не 300! */
-    color: #262522;   /* В макете здесь темный текст, а не прозрачный! */
+    font-weight: 300; 
+    color: #262522;   
     line-height: 1.5;
-    margin-bottom: 16px; /* Ровно 16px между пунктами списка */
+    margin-bottom: 16px; 
 }
 
-/* Убираем лишние отступы у последнего пункта */
+
 .recipe-body ul.tips-list li:last-child {
     margin-bottom: 0;
 }
 
-/* Делаем жирный текст заголовком внутри абзаца, но не разрываем блок */
+
 .recipe-body ul.tips-list li strong {
-    display: block; /* Сбрасывает следующий текст на новую строку */
+    display: block; 
     font-weight: 600;
-    margin-bottom: 0; /* НОЛЬ отступов, чтобы блок читался как единое целое */
+    margin-bottom: 0; 
 }
 
-/* ========================================= */
-/* ЛЕВАЯ КОЛОНКА: ЗАГОЛОВКИ И ШАГИ           */
-/* ========================================= */
+
+
+
 .tips-main-title {
     font-family: var(--font-family-headings, 'Montserrat', sans-serif);
     color: var(--color-dark, #262522);
@@ -256,13 +256,13 @@
     display: block;
 }
 
-/* ========================================= */
-/* БЛОК SHARE (ЖЕЛЕЗОБЕТОННЫЙ ВАРИАНТ)       */
-/* ========================================= */
+
+
+
 
 .share-block {
     display: inline-flex;
-    align-items: center; /* Центрируем по вертикали */
+    align-items: center; 
     gap: 48px; 
     height: 48px; 
     padding: 0 24px; 
@@ -286,7 +286,7 @@
 
 .share-socials {
     display: flex;
-    align-items: center; /* Выравниваем список */
+    align-items: center; 
     gap: 12px; 
     list-style: none;
     margin: 0 !important; 
@@ -294,7 +294,7 @@
     height: 100%;
 }
 
-/* Делаем пункты списка flex-контейнерами */
+
 .share-socials li {
     display: flex;
     align-items: center;
@@ -303,7 +303,7 @@
     padding: 0 !important;
 }
 
-/* Делаем ссылки flex-контейнерами (это убивает все скрытые отступы) */
+
 .share-socials a {
     display: flex;
     align-items: center;
@@ -312,7 +312,7 @@
     line-height: 0;
 }
 
-/* Убираем любые браузерные рамки и отступы у самих картинок */
+
 .share-socials img, 
 .share-socials svg {
     display: block;
@@ -351,76 +351,76 @@
 .recipe-author .btn, 
 .recipe-author a { 
     display: inline-block;
-    padding: 10px 24px; /* Задаем размер кнопки */
-    border: 1px solid var(--color-dark, #262522); /* Тонкая темная рамка */
-    border-radius: 24px; /* Превращаем прямоугольник в пилюлю */
-    color: var(--color-dark, #262522); /* Цвет текста */
+    padding: 10px 24px; 
+    border: 1px solid var(--color-dark, #262522); 
+    border-radius: 24px; 
+    color: var(--color-dark, #262522); 
     text-decoration: none;
     font-family: var(--font-family-text, 'Roboto', sans-serif);
     font-size: 14px;
     font-weight: 500;
-    background-color: transparent; /* Убираем фон, если он был */
-    margin-top: 8px; /* Небольшой отступ от текста биографии */
+    background-color: transparent; 
+    margin-top: 8px; 
 }
 
-/* ========================================= */
-/* ПРАВАЯ КОЛОНКА (САЙДБАР)                  */
-/* ========================================= */
+
+
+
 
 .recipe-sidebar {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    gap: 24px; /* Расстояние между карточками */
+    gap: 24px; 
 }
 
-/* Общий стиль для всех трех карточек */
+
 .ingredients-box, 
 .equipment-box, 
 .value-box {
-    background-color: #fffbf2; /* Теплый цвет фона из Figma */
-    padding: 24px 16px; /* Отступы из Figma */
-    border-radius: 24px; /* Закругление из Figma */
-    border: 1px solid rgba(38, 37, 34, 0.2); /* Рамка в стиле остальных блоков */
-    box-shadow: none; /* Убираем старую тень */
+    background-color: #fffbf2; 
+    padding: 24px 16px; 
+    border-radius: 24px; 
+    border: 1px solid rgba(38, 37, 34, 0.2); 
+    box-shadow: none; 
 }   
 
-/* Заголовки внутри карточек */
+
 .ingredients-box h2, 
 .equipment-box h2, 
 .value-box h2 {
     font-family: var(--font-family-headings, 'Montserrat', sans-serif);
-    font-size: 18px; /* Из Figma */
-    font-weight: 600; /* Из Figma */
-    color: var(--color-accent, #ee6352); /* Оранжевый цвет */
+    font-size: 18px; 
+    font-weight: 600; 
+    color: var(--color-accent, #ee6352); 
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 16px; /* Отступ до списка из Figma (gap: 16px) */
+    margin-bottom: 16px; 
     line-height: 1.2;
 }
 
-/* Списки ингредиентов и оборудования (с точками) */
+
 .ingredients-list, 
 .equipment-list {
     font-family: var(--font-family-text, 'Roboto', sans-serif);
-    font-size: 21px; /* Крупный текст из Figma */
-    font-weight: 400; /* Нормальный вес из Figma */
+    font-size: 16px; 
+    font-weight: 400; 
     color: var(--color-dark, #262522); 
     list-style-type: disc;
-    padding-left: 24px; /* Аккуратный отступ для маркеров */
+    padding-left: 24px; 
     margin: 0;
 }
 
 .ingredients-list li, 
 .equipment-list li {
-    margin-bottom: 8px; /* Небольшой отступ между пунктами */
+    margin-bottom: 8px; 
     line-height: 1.4;
 }
 
-/* Карточка пищевой ценности (ОСОБЫЙ СТИЛЬ: без точек) */
+
 .value-box p {
     font-family: var(--font-family-text, 'Roboto', sans-serif);
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-dark, #262522);
     margin-top: 0;
@@ -429,11 +429,11 @@
 
 .value-list {
     font-family: var(--font-family-text, 'Roboto', sans-serif);
-    font-size: 21px;
+    font-size: 16px;
     color: var(--color-dark, #262522);
-    list-style: none; /* УБИРАЕМ ТОЧКИ ПО МАКЕТУ */
-    padding-left: 0; /* Прижимаем к левому краю */
-    margin: 0;
+    list-style: none; 
+    padding-left: 0; 
+    margin-top: 16px;
 }
 
 .value-list li {
@@ -445,23 +445,23 @@
     font-weight: 700;
 }
 
-/* Нижняя серая приписка (NOTE) */
+
 .recipe-sidebar-note {
     font-family: var(--font-family-text, 'Roboto', sans-serif);
-    font-size: 12px; /* Делаем текст мелким */
+    font-size: 12px; 
     font-weight: 500;
     color: var(--color-dark, #262522);
-    opacity: 0.5; /* Делаем текст полупрозрачным (серым) */
-    text-transform: uppercase; /* Все буквы заглавные */
-    text-align: left; /* В макете текст по левому краю, а не по центру */
+    opacity: 0.5; 
+    text-transform: uppercase; 
+    text-align: left; 
     line-height: 1.5;
     margin-top: 8px;
-    padding: 0 16px; /* Небольшие отступы по бокам, чтобы выровняться с текстом карточек */
+    padding: 0 16px; 
 }
 
-/* ========================================= */
-/* БЛОК SIMILAR RECIPES                      */
-/* ========================================= */
+
+
+
 
 .similar-recipes {
     padding: 40px 0 56px;
@@ -633,7 +633,7 @@
     z-index: 2;
 }
 
-/* Планшет */
+
 @media (max-width: 991px) {
     .section-title {
         font-size: 42px;
@@ -658,7 +658,7 @@
     }
 }
 
-/* Мобильная версия */
+
 @media (max-width: 767px) {
     .similar-recipes {
         padding: 32px 0 40px;
@@ -725,9 +725,9 @@
     }
 }
 
-/* ========================================= */
-/* БЛОК ПОДПИСКИ (SUBSCRIBE)                 */
-/* ========================================= */
+
+
+
 
 .subscribe-section {
     background-color: var(--color-accent, #ee6352);
