@@ -1,0 +1,144 @@
+/* Базовые стили шапки */
+.header {
+    background-color: transparent;
+    padding: var(--spacing-sm);
+}
+
+/* Делаем селектор сильнее, чтобы перебить класс .container */
+.header .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Заставляем растянуться на всю доступную ширину */
+    max-width: 1312px; /* Ширина из макета */
+    padding: 16px 40px; /* Увеличиваем боковые отступы до 40px, чтобы кнопка дышала */
+    border: 1px solid rgba(38, 37, 34, 0.2); /* Рамка чуть поярче */
+    border-radius: 40px; /* Делаем идеальную "пилюлю" */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ===================================== */
+/* ЛОГОТИП                               */
+/* ===================================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo__icon {
+    width: 40px; /* Размер из Figma */
+}
+
+/* Текст логотипа (Ограничиваем ширину, чтобы слово Delight упало вниз) */
+.logo__text {
+    width: 55px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #262522;
+}
+
+/* ===================================== */
+/* БУРГЕР МЕНЮ (Mobile First)            */
+/* ===================================== */
+.burger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.burger-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #262522;
+    border-radius: 2px;
+}
+
+/* Прячем меню и кнопки на мобильных */
+.main-nav, 
+.header__actions {
+    display: none; 
+}
+
+/* ===================================== */
+/* СТИЛИ МЕНЮ И КНОПОК (Для Десктопа)    */
+/* ===================================== */
+.nav-list {
+    display: flex;
+    gap: 24px; /* Из Figma */
+    list-style: none;
+}
+
+/* Обычные ссылки (серые) */
+.nav-item a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262522;
+    opacity: 0.5; /* Делает текст серым */
+    padding: 8px;
+}
+
+/* Активная ссылка HOME (черная с подчеркиванием) */
+.nav-item:first-child a {
+    opacity: 1; /* Полностью черный */
+    border-bottom: 2px solid #ee6352; /* Оранжевый цвет из Figma */
+    padding-bottom: 4px;
+}
+
+.header__actions {
+    align-items: center;
+    gap: 16px;
+}
+
+/* Кнопка поиска (Берем стиль прозрачности и скругления из Figma) */
+.search-btn {
+    background-color: rgba(38, 37, 34, 0.08); 
+    border: none;
+    border-radius: 16px; 
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Черная кнопка SUBSCRIBE */
+.btn--subscribe {
+    background-color: #262522;
+    color: #f0ebe1;
+    padding: 6px 24px;
+    border-radius: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ===================================== */
+/* АДАПТИВНОСТЬ: ДЕСКТОП (от 1024px)     */
+/* ===================================== */
+@media (min-width: 1024px) {
+    .burger-btn {
+        display: none; /* Прячем бургер */
+    }
+    
+    .main-nav {
+        display: block; /* Показываем меню */
+    }
+    
+    .header__actions {
+        display: flex; /* Показываем кнопки поиска и подписки */
+    }
+}

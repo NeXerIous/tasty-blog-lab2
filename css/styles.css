@@ -1,0 +1,23 @@
+@import 'variables.css';
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Базовые сбросы стилей */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: 1.6;
+    background-color: var(--color-background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

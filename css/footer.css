@@ -1,0 +1,63 @@
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-lg) 0 var(--spacing-sm) 0;
+    margin-top: auto; /* Прижимает подвал к низу страницы, если контента мало */
+}
+
+/* Верхняя часть подвала (мобильный вид) */
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Навигация в подвале */
+.footer-nav__list {
+    display: flex;
+    flex-direction: column; /* На телефоне меню в столбик */
+    align-items: center;
+    gap: var(--spacing-sm);
+    list-style: none;
+}
+
+.footer-nav__list a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+}
+
+/* Иконки соцсетей */
+.footer-socials {
+    display: flex;
+    gap: var(--spacing-sm);
+    list-style: none;
+}
+
+/* Нижняя часть с копирайтом */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Полупрозрачная белая линия */
+    padding-top: var(--spacing-sm);
+}
+
+.copyright {
+    font-size: var(--font-size-sm);
+    color: #a0a0a0;
+}
+
+/* Адаптивность подвала для десктопов */
+@media (min-width: 1024px) {
+    .footer-top {
+        flex-direction: row; /* Выстраиваем Лого, Меню и Соцсети в один ряд */
+        justify-content: space-between;
+    }
+    
+    .footer-nav__list {
+        flex-direction: row; /* Меню тоже в ряд */
+        gap: var(--spacing-md);
+    }
+}

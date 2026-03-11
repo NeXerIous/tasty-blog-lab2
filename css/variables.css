@@ -1,0 +1,34 @@
+:root {
+    /* Добавляем точные цвета из Figma */
+    --color-dark: #262522; /* Темно-серый/черный для заголовков */
+    --color-accent: #ee6352; /* Точный оранжевый цвет */
+    --color-text-body: rgba(51, 51, 51, 0.8); /* Это #333333 с opacity 80% */
+    
+    /* Добавляем шрифты из Figma */
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    
+    /* Цвета из макета Figma */
+    --color-primary: #000000;      /* Черный для заголовков и подвала */
+    --color-accent:  #EE6352;       /* Оранжево-красный (кнопки, бейдж RECIPE) */
+    --color-background: #F0EBE1;   /* Светло-бежевый фон страницы */
+    --color-text: #4a4a4a;         /* Темно-серый для основного текста (чтобы не резало глаза) */
+    --color-white: #ffffff;
+
+    /* Типографика из макета */
+    --font-family-main: 'Arial', sans-serif; /* В идеале тут Inter или Roboto, но оставим базовый sans-serif */
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 3rem;          /* Крупный размер для главного заголовка H1 */
+
+    /* Отступы по макету */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;            /* Большие отступы между секциями */
+
+    /* Breakpoints согласно адаптивному макету (из задания) */
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+}
