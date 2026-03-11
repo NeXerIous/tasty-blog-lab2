@@ -15,7 +15,7 @@
     border: 1px solid rgba(38, 37, 34, 0.2);
     border-radius: 40px;
     padding: var(--spacing-lg) 40px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .recipe-header {
@@ -42,7 +42,7 @@
     font-weight: 900;
     margin: 0px auto 20px auto;
     text-transform: uppercase;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     max-width: 700px;
 }
 
@@ -61,10 +61,10 @@
     gap: 48px;
     list-style: none;
     margin: 32px 0;
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-weight: 600;
     font-size: 18px;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
 }
 
 .recipe-info-item {
@@ -84,7 +84,7 @@
     position: absolute;
     right: -24px; 
     transform: translateX(50%); 
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     font-size: 20px;
 }
 
@@ -132,16 +132,16 @@
 
 .recipe-body p, 
 .recipe-body li {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 16px;
     font-weight: 300;
-    color: var(--color-text-body, rgba(51, 51, 51, 0.8));
+    color: var(--color-text-body);
     line-height: 1.6;
     max-width: 560px;
 }
 
 .recipe-body p strong {
-    color: var(--color-accent, #ee6352); 
+    color: var(--color-accent); 
 }
 
 .recipe-body p {
@@ -166,7 +166,7 @@
 
 
 .tips-main-title {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 24px;
     font-weight: 700;
     color: #262522;
@@ -176,7 +176,7 @@
 
 
 .tips-subtitle {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 18px;
     font-weight: 600;
     color: #ee6352;
@@ -193,7 +193,7 @@
 
 
 .recipe-body ul.tips-list li {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 16px;
     font-weight: 300; 
     color: #262522;   
@@ -217,18 +217,18 @@
 
 
 .tips-main-title {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
-    color: var(--color-dark, #262522);
+    font-family: var(--font-family-headings);
+    color: var(--color-dark);
     max-width: 560px;
     font-size: 24px;
 }
 
 .instructions-title {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 40px;
     font-weight: 700;
     line-height: 28px;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     margin: 48px 0 16px 0;
     max-width: 560px;
     text-transform: uppercase;
@@ -236,10 +236,10 @@
 
 .step-title, 
 .tips-subtitle {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 18px;
     font-weight: 600;
-    color: var(--color-accent, #ee6352);
+    color: var(--color-accent);
     text-transform: uppercase;
     
 }
@@ -273,10 +273,10 @@
 }
 
 .share-label {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 14px;
     font-weight: 600;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     margin: 0 !important; 
     padding: 0 !important;
     line-height: 1; 
@@ -295,22 +295,6 @@
 }
 
 
-.share-socials li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 !important; 
-    padding: 0 !important;
-}
-
-
-.share-socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    line-height: 0;
-}
 
 
 .share-socials img, 
@@ -336,10 +320,10 @@
 }
 
 .author-name {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 18px;
     font-weight: 700;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     margin-bottom: 12px;
 }
 
@@ -352,11 +336,11 @@
 .recipe-author a { 
     display: inline-block;
     padding: 10px 24px; 
-    border: 1px solid var(--color-dark, #262522); 
+    border: 1px solid var(--color-dark); 
     border-radius: 24px; 
-    color: var(--color-dark, #262522); 
+    color: var(--color-dark); 
     text-decoration: none;
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 14px;
     font-weight: 500;
     background-color: transparent; 
@@ -389,10 +373,10 @@
 .ingredients-box h2, 
 .equipment-box h2, 
 .value-box h2 {
-    font-family: var(--font-family-headings, 'Montserrat', sans-serif);
+    font-family: var(--font-family-headings);
     font-size: 18px; 
     font-weight: 600; 
-    color: var(--color-accent, #ee6352); 
+    color: var(--color-accent); 
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 16px; 
@@ -402,10 +386,10 @@
 
 .ingredients-list, 
 .equipment-list {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 16px; 
     font-weight: 400; 
-    color: var(--color-dark, #262522); 
+    color: var(--color-dark); 
     list-style-type: disc;
     padding-left: 24px; 
     margin: 0;
@@ -419,18 +403,18 @@
 
 
 .value-box p {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     margin-top: 0;
     margin-bottom: 16px;
 }
 
 .value-list {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 16px;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     list-style: none; 
     padding-left: 0; 
     margin-top: 16px;
@@ -447,10 +431,10 @@
 
 
 .recipe-sidebar-note {
-    font-family: var(--font-family-text, 'Roboto', sans-serif);
+    font-family: var(--font-family-text);
     font-size: 12px; 
     font-weight: 500;
-    color: var(--color-dark, #262522);
+    color: var(--color-dark);
     opacity: 0.5; 
     text-transform: uppercase; 
     text-align: left; 
@@ -602,20 +586,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 174px;
-    min-height: 50px;
     padding: 12px 28px;
     border: 2px solid #5d5953;
     border-radius: 999px;
     background: transparent;
     color: #262522;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.2s ease;
-    white-space: nowrap;
 }
 
 .btn--outline:hover {
@@ -730,8 +711,8 @@
 
 
 .subscribe-section {
-    background-color: var(--color-accent, #ee6352);
-    color: var(--color-white, #fff);
+    background-color: var(--color-accent);
+    color: var(--color-white);
     text-align: center;
     padding: var(--spacing-lg) var(--spacing-sm);
     border-radius: 30px;
@@ -763,8 +744,8 @@
 }
 
 .btn--submit {
-    background-color: var(--color-dark, #262522);
-    color: var(--color-white, #fff);
+    background-color: var(--color-dark);
+    color: var(--color-white);
     padding: 15px 30px;
     border: none;
     font-weight: bold;
@@ -775,7 +756,7 @@
 @media (min-width: 768px) {
     .subscribe-form {
         flex-direction: row;
-        background: var(--color-white, #fff);
+        background: var(--color-white);
         border-radius: 30px;
         padding: 5px;
         gap: 0;
