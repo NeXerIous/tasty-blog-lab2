@@ -1,0 +1,22 @@
+:root {
+    --color-dark: #262522;
+    --color-accent: #ee6352;
+    --color-text-body: rgba(51, 51, 51, 0.8);
+
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    --font-family-main: 'Roboto', sans-serif;
+
+    --color-primary: #000000;
+    --color-background: #F0EBE1;
+    --color-text: #4a4a4a;
+    --color-white: #ffffff;
+
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-xl: 3rem;
+
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+}
