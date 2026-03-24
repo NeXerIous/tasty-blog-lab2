@@ -47,16 +47,16 @@
     </header>
 
     <main id="main-content">
-        <article class="recipe" itemscope itemtype="https://schema.org/Recipe">
+        <article class="recipe" id="active-recipe" itemscope itemtype="https://schema.org/Recipe">
             
             <header class="recipe-header">
-                <span class="recipe-badge">RECIPE</span>
+                <span class="recipe-badge" data-recipe-badge>RECIPE</span>
                
-                <h1 class="recipe-title" itemprop="name">LEMON GARLIC ROASTED CHICKEN</h1>
+                <h1 class="recipe-title" data-recipe-title itemprop="name">LEMON GARLIC ROASTED CHICKEN</h1>
                
-                <p class="recipe-description" itemprop="description">Welcome to Cooks Delight, where culinary dreams come alive! Today, we embark on a journey of flavors with a dish that promises to elevate your dining experience – our Citrus Infusion Delight: Lemon Garlic Roasted Chicken.</p>
+                <p class="recipe-description" data-recipe-description itemprop="description">Welcome to Cooks Delight, where culinary dreams come alive! Today, we embark on a journey of flavors with a dish that promises to elevate your dining experience – our Citrus Infusion Delight: Lemon Garlic Roasted Chicken.</p>
               
-                <ul class="recipe-info">
+                <ul class="recipe-info" data-recipe-info>
                     <li class="recipe-info-item">
                         <img src="images/clock-icon.svg" alt="">
                         <span>1 HOUR</span>
@@ -72,13 +72,14 @@
                 </ul>
                 
                 <figure class="recipe-main-image">
-                    <img src="images/main-chicken.jpg" alt="Lemon Garlic Roasted Chicken in a pan" itemprop="image">
+                    <img src="images/main-chicken.jpg" alt="Lemon Garlic Roasted Chicken in a pan" data-recipe-image itemprop="image">
                 </figure>
             </header>
             
             <div class="recipe-content">
     
                 <div class="recipe-body">
+                    <div data-recipe-content>
 
                     <p>Picture succulent chicken infused with the bright notes of lemon and the aromatic richness of garlic. It's a symphony of flavors that will have your taste buds dancing. Join us as we delve into the art of roasting and uncover the secrets behind creating a masterpiece that's not just a meal but a celebration of culinary craftsmanship.</p>
                     <p>As you preheat your oven, envision the kitchen filling with the tantalizing aroma of herbs and citrus, setting the stage for a delightful meal that transcends the ordinary. The anticipation builds as the chicken roasts to golden perfection, promising a dining experience that marries simplicity with sophistication. Whether you're a seasoned chef or a kitchen novice, this recipe invites you to become a culinary artist, creating a masterpiece that will leave a lasting impression on your guests and loved ones.</p>
@@ -169,13 +170,18 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
 
                     </section>
 
-                    <div class="share-block">
-                        <span class="share-label">SHARE</span>
-                            <ul class="share-socials">
-                                <li><a href="#"><img src="images/icon-fb.svg" alt="Facebook"></a></li>
-                                <li><a href="#"><img src="images/icon-ig.svg" alt="Instagram"></a></li>
-                                <li><a href="#"><img src="images/icon-yt.svg" alt="YouTube"></a></li>
-                            </ul>
+                    </div>
+
+                    <div class="recipe-actions">
+                        <div class="share-block">
+                            <span class="share-label">SHARE</span>
+                                <ul class="share-socials">
+                                    <li><a href="#"><img src="images/icon-fb.svg" alt="Facebook"></a></li>
+                                    <li><a href="#"><img src="images/icon-ig.svg" alt="Instagram"></a></li>
+                                    <li><a href="#"><img src="images/icon-yt.svg" alt="YouTube"></a></li>
+                                </ul>
+                        </div>
+                        <button type="button" class="start-cooking-btn" data-start-cooking>START COOKING</button>
                     </div>
 
                     <div class="recipe-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -189,7 +195,7 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
 
                 </div>
 
-                <aside class="recipe-sidebar">
+                <aside class="recipe-sidebar" data-recipe-sidebar>
                     <section class="ingredients-box">
                         <h2>ingredients</h2>
                         <ul class="ingredients-list">
@@ -244,21 +250,21 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
                     </div>
                 </header>
 
-                <div class="recipes-grid">
+                <div class="recipes-grid" data-recipe-cards>
                     
-                    <article class="recipe-card">
+                    <article class="recipe-card" data-slot="0" data-recipe-id="savory-herb-chicken">
                         <img src="images/similar-chicken.jpg" alt="Savory Herb-Infused Chicken" class="recipe-card__image">
                         <div class="recipe-card__content">
                             <h3 class="recipe-card__title">Savory Herb-Infused Chicken</h3>
                             <p class="recipe-card__desc">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.</p>
                             <div class="recipe-card__meta">
                                 <span class="meta-info">40 MIN - EASY PREP - 3 SERVES</span>
-                                <a href="#" class="btn--outline">VIEW RECIPE</a>
+                                <button type="button" class="btn--outline" data-recipe-trigger data-recipe-id="savory-herb-chicken" data-slot="0">VIEW RECIPE</button>
                             </div>
                         </div>
                     </article>
 
-                    <article class="recipe-card">
+                    <article class="recipe-card" data-slot="1" data-recipe-id="decadent-chocolate-mousse">
                         <div class="image-wrapper">
                             <img src="images/similar-mousse.jpg" alt="Decadent Chocolate Mousse" class="recipe-card__image">
                             <img src="images/vegan-badge.svg" alt="Vegan friendly" class="badge-vegan">
@@ -268,10 +274,90 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
                             <p class="recipe-card__desc">Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
                             <div class="recipe-card__meta">
                                 <span class="meta-info">30 MIN - MEDIUM PREP - 4 SERVES</span>
-                                <a href="#" class="btn--outline">VIEW RECIPE</a>
+                                <button type="button" class="btn--outline" data-recipe-trigger data-recipe-id="decadent-chocolate-mousse" data-slot="1">VIEW RECIPE</button>
                             </div>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments-section" id="comments">
+            <div class="container comments-shell">
+                <div class="comments-layout">
+                    <div class="comments-panel">
+                        <div class="comments-panel__header">
+                            <h2 class="comments-title" data-comments-title>Reader Reviews</h2>
+                            <p class="comments-subtitle" data-comments-subtitle>See what readers think about the current recipe and leave your own review.</p>
+                        </div>
+
+                        <div class="comments-summary" data-comments-summary>
+                            <div class="comments-summary__rating">
+                                <span class="comments-summary__value" data-comments-average>4.8</span>
+                                <span class="comments-stars" data-comments-average-stars aria-hidden="true">★★★★★</span>
+                            </div>
+                            <p class="comments-summary__count" data-comments-count>3 comments</p>
+                        </div>
+
+                        <div class="comments-list" data-comments-list>
+                            <article class="comment-card">
+                                <div class="comment-card__meta">
+                                    <div>
+                                        <h3 class="comment-card__author">Ava Stone</h3>
+                                        <p class="comment-card__date">March 18, 2026</p>
+                                    </div>
+                                    <span class="comment-card__stars">★★★★★</span>
+                                </div>
+                                <p class="comment-card__text">Bright, juicy, and very easy to follow. The lemon and garlic balance each other really well.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="comments-form-box">
+                        <h3 class="comments-form__title">Leave a Review</h3>
+                        <p class="comments-form__text">Your comment will be attached to the recipe you are currently viewing.</p>
+
+                        <form class="comments-form" data-comments-form novalidate>
+                            <div class="comments-form__grid">
+                                <label class="comments-field">
+                                    <span class="comments-field__label">Name</span>
+                                    <input class="comments-field__input comments-field__input--dark" type="text" name="name" placeholder="Your Name" required>
+                                </label>
+
+                                <label class="comments-field">
+                                    <span class="comments-field__label">Email</span>
+                                    <input class="comments-field__input comments-field__input--muted" type="email" name="email" placeholder="your@email.com" required>
+                                </label>
+
+                                <fieldset class="comments-rating">
+                                    <legend class="comments-field__label">Rating</legend>
+                                    <div class="comments-rating__stars" data-rating-stars>
+                                        <input type="radio" id="rating-5" name="rating" value="5">
+                                        <label for="rating-5" aria-label="5 stars">★</label>
+                                        <input type="radio" id="rating-4" name="rating" value="4">
+                                        <label for="rating-4" aria-label="4 stars">★</label>
+                                        <input type="radio" id="rating-3" name="rating" value="3">
+                                        <label for="rating-3" aria-label="3 stars">★</label>
+                                        <input type="radio" id="rating-2" name="rating" value="2">
+                                        <label for="rating-2" aria-label="2 stars">★</label>
+                                        <input type="radio" id="rating-1" name="rating" value="1">
+                                        <label for="rating-1" aria-label="1 star">★</label>
+                                    </div>
+                                    <p class="comments-rating__hint" data-rating-text>Select a rating</p>
+                                </fieldset>
+
+                                <label class="comments-field comments-field--full">
+                                    <span class="comments-field__label">Comment</span>
+                                    <textarea class="comments-field__textarea" name="comment" rows="5" maxlength="400" placeholder="Share what you liked, changed, or would cook again." required></textarea>
+                                </label>
+                            </div>
+
+                            <div class="comments-form__footer">
+                                <p class="comments-form__meta" data-comment-length>0 / 400</p>
+                                <button type="submit" class="btn--submit comments-form__submit">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -318,5 +404,73 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
         </div>
     </footer>
 
+    <div class="cooking-timer" data-cooking-timer hidden>
+        <div class="cooking-timer__desktop">
+            <div class="cooking-timer__header" data-timer-drag-handle>
+                <div>
+                    <p class="cooking-timer__eyebrow">Cooking Timer</p>
+                    <h3 class="cooking-timer__recipe" data-timer-recipe-title>Lemon Garlic Roasted Chicken</h3>
+                </div>
+                <button type="button" class="cooking-timer__close" data-timer-close aria-label="Close timer">&times;</button>
+            </div>
+
+            <div class="cooking-timer__ring-wrap">
+                <div class="cooking-timer__ring" data-timer-ring role="presentation" aria-label="Adjust current step timer">
+                    <div class="cooking-timer__ring-inner">
+                        <span class="cooking-timer__time" data-timer-time>05:00</span>
+                        <span class="cooking-timer__time-label">Current step</span>
+                        <div class="cooking-timer__controls cooking-timer__controls--embedded">
+                            <button type="button" class="cooking-timer__control cooking-timer__control--small" data-timer-toggle aria-label="Pause or resume timer">
+                                <span data-timer-toggle-icon>❚❚</span>
+                            </button>
+                            <button type="button" class="cooking-timer__control cooking-timer__control--small" data-timer-restart aria-label="Restart timer">
+                                <span>&#8635;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cooking-timer__info">
+                <p class="cooking-timer__step-label" data-timer-step-label>Step 1 of 4</p>
+                <h4 class="cooking-timer__step-title" data-timer-step-title>Preheat and Prepare</h4>
+                <p class="cooking-timer__recipe-total" data-timer-recipe-total>Total recipe: 60:00</p>
+            </div>
+
+        </div>
+
+        <div class="cooking-timer__mobile">
+            <div class="cooking-timer__mobile-top">
+                <div>
+                    <p class="cooking-timer__step-label" data-mobile-step-label>Step 1 of 4</p>
+                    <h4 class="cooking-timer__step-title" data-mobile-step-title>Preheat and Prepare</h4>
+                </div>
+                <button type="button" class="cooking-timer__close cooking-timer__close--mobile" data-timer-close-mobile aria-label="Close timer">&times;</button>
+            </div>
+
+            <div class="cooking-timer__mobile-progress">
+                <div class="cooking-timer__mobile-bar" data-mobile-bar>
+                    <span class="cooking-timer__mobile-fill" data-mobile-progress>
+                        <span class="cooking-timer__mobile-thumb" data-mobile-thumb></span>
+                    </span>
+                </div>
+                <span class="cooking-timer__time cooking-timer__time--mobile" data-mobile-time>05:00</span>
+            </div>
+
+            <p class="cooking-timer__recipe-total" data-mobile-recipe-total>Total recipe: 60:00</p>
+
+            <div class="cooking-timer__controls cooking-timer__controls--mobile">
+                <button type="button" class="cooking-timer__control" data-timer-toggle-mobile aria-label="Pause or resume timer">
+                    <span data-timer-toggle-icon-mobile>❚❚</span>
+                </button>
+                <button type="button" class="cooking-timer__control" data-timer-restart-mobile aria-label="Restart timer">
+                    <span>&#8635;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cooking-timer-toasts" data-timer-toasts aria-live="polite"></div>
+    <script type="module" src="js/script.js"></script>
     </body>
 </html>
