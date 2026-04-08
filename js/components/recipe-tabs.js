@@ -464,7 +464,7 @@ function handleRecipeSelect(event, elements, cardsRoot) {
     const clickedRecipeId = trigger.dataset.recipeId;
     const slotIndex = Number(trigger.dataset.slot);
 
-    if (!clickedRecipeId || Number.isNaN(slotIndex) || clickedRecipeId === state.activeRecipeId) {
+    if (!clickedRecipeId || Number.isNaN(slotIndex) || clickedRecipeId == state.activeRecipeId) {
         return;
     }
 
