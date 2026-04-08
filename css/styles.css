@@ -5,6 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap');
 
 
+html {
+    min-height: 100%;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,4 +25,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }

@@ -235,6 +235,66 @@ Whether you're hosting a family dinner or looking for a show-stopping centerpiec
 
             </div>
         </article>
+        <section class="recipe-finder-section" id="recipe-finder">
+            <div class="container recipe-finder-shell">
+                <div class="recipe-finder-layout">
+                    <div class="recipe-finder-panel">
+                        <div class="recipe-finder__header">
+                            <span class="recipe-finder__eyebrow">API-powered recipes</span>
+                            <h2 class="recipe-finder__title">Recipe Finder</h2>
+                            <p class="recipe-finder__text">Search recipes from TheMealDB, cache the results, and keep your saved meals available even when you go offline.</p>
+                        </div>
+
+                        <form id="search-form" class="recipe-finder-form" novalidate>
+                            <label class="recipe-finder-form__field" for="search-input">
+                                <span class="recipe-finder-form__label">Dish Name</span>
+                                <input id="search-input" class="recipe-finder-form__input" type="search" name="query" placeholder="Try chicken, pasta, beef..." autocomplete="off">
+                            </label>
+
+                            <div class="recipe-finder-form__actions">
+                                <button type="submit" class="btn--submit recipe-finder-form__submit">Search Recipes</button>
+                                <button type="button" class="btn--outline recipe-finder-form__secondary" id="refresh-btn">Refresh Data</button>
+                                <button type="button" class="btn--outline recipe-finder-form__secondary" id="clear-cache-btn">Clear Cache</button>
+                            </div>
+                        </form>
+
+                        <div class="recipe-finder-status">
+                            <p class="recipe-finder-status__text" data-search-status>Search results will be cached in your browser and reused when possible.</p>
+                            <p class="recipe-finder-status__text recipe-finder-status__text--muted" data-search-meta>Session cache stores the latest tab results. Local cache keeps them longer for offline access.</p>
+                        </div>
+
+                        <div id="loading-indicator" class="recipe-finder-loading" hidden>
+                            <span class="recipe-finder-loading__dot" aria-hidden="true"></span>
+                            <span>Loading recipes...</span>
+                        </div>
+
+                        <div id="data-container" class="recipe-finder-results">
+                            <article class="recipe-search-card recipe-search-card--empty">
+                                <h3>Search the recipe library</h3>
+                                <p>Use the field above to find meals, test caching, and save your favorite recipes for offline viewing.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <aside class="recipe-finder-sidebar">
+                        <div class="recipe-finder-favorites">
+                            <div class="recipe-finder-favorites__header">
+                                <span class="recipe-finder__eyebrow">Offline access</span>
+                                <h3 class="recipe-finder-favorites__title">Saved Recipes</h3>
+                            </div>
+                            <p class="recipe-finder-favorites__text">Recipes you save here stay available from localStorage even without an internet connection.</p>
+                            <div id="favorites-container" class="recipe-finder-favorites__list">
+                                <article class="recipe-favorite-card recipe-favorite-card--empty">
+                                    <h4>No saved recipes yet</h4>
+                                    <p>Search for a meal and save it to build your offline recipe list.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
         <section class="similar-recipes">
             <div class="container">
                 
