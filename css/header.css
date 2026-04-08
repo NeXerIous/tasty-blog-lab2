@@ -133,7 +133,7 @@
 }
 
 
-.nav-item a {
+.nav-link {
     display: inline-block;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -145,7 +145,7 @@
 }
 
 
-.nav-item:first-child a {
+.nav-link.is-active {
     opacity: 1; 
     border-bottom: 2px solid #ee6352; 
     padding-bottom: 4px;
@@ -225,7 +225,7 @@
         gap: 24px; 
     }
 
-    .nav-item a {
+    .nav-link {
         padding: 8px;
     }
     

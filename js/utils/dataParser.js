@@ -31,6 +31,45 @@ export function truncateText(text, maxLength, useWordBoundary = true) {
     return `${truncated}...`;
 }
 
+export function splitInstructions(text) {
+    const normalizedText = String(text || '').replace(/\r/g, '\n').trim();
+
+    if (!normalizedText) {
+        return [];
+    }
+
+    const paragraphs = normalizedText
+        .split(/\n+/)
+        .map((item) => item.trim().replace(/^\d+[\).\s-]+/, ''))
+        .filter(Boolean);
+
+    if (paragraphs.length > 1) {
+        return paragraphs;
+    }
+
+    const sentences = normalizedText
+        .split(/(?<=[.!?])\s+/)
+        .map((item) => item.trim().replace(/^\d+[\).\s-]+/, ''))
+        .filter(Boolean);
+
+    if (sentences.length <= 2) {
+        return sentences.length ? sentences : [normalizedText];
+    }
+
+    const groupedSteps = [];
+
+    for (let index = 0; index < sentences.length; index += 2) {
+        groupedSteps.push(sentences.slice(index, index + 2).join(' '));
+    }
+
+    return groupedSteps;
+}
+
+export function createRecipeSummary(text, maxLength = 220) {
+    const [firstStep = ''] = splitInstructions(text);
+    return truncateText(firstStep || text || '', maxLength);
+}
+
 export function createElementFromData(data, template) {
     try {
         let html = template;
@@ -61,13 +100,17 @@ export function parseMealData(meal) {
         }
     }
 
+    const instructions = meal.strInstructions || '';
+    const instructionSteps = splitInstructions(instructions);
+
     return {
         id: meal.idMeal,
         title: meal.strMeal,
         category: meal.strCategory || 'Recipe',
         area: meal.strArea || 'International',
-        instructions: meal.strInstructions || '',
-        description: meal.strInstructions || 'No description available for this recipe yet.',
+        instructions,
+        instructionSteps,
+        description: createRecipeSummary(instructions, 260) || 'No description available for this recipe yet.',
         image: meal.strMealThumb || '',
         ingredients,
         source: meal.strSource || '',

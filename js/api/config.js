@@ -16,6 +16,7 @@ export const APP_CONFIG = {
         lastSuccessfulQuery: 'tastyblog-last-successful-query',
         lastSearchQuery: 'tastyblog-last-search-query',
         lastSearchResults: 'tastyblog-last-search-results',
+        selectedRecipeId: 'tastyblog-selected-recipe-id',
     },
 };
 
@@ -24,4 +25,3 @@ export const APP_SETTINGS = {
     language: 'en',
     cacheDuration: APP_CONFIG.cacheDuration,
 };
-
